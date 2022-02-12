@@ -1,0 +1,41 @@
+{
+  "name": "react-unified-markdown",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "axios": "0.25.0",
+    "doc": "0.0.3",
+    "gray-matter": "4.0.3",
+    "html": "1.0.0",
+    "marked": "4.0.12",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-markdown": "8.0.0",
+    "react-scripts": "4.0.3",
+    "rehype-react": "7.0.4",
+    "remark-gemoji": "7.0.1",
+    "remark-gfm": "3.0.1",
+    "remark-parse": "10.0.1",
+    "remark-rehype": "10.1.0",
+    "unified": "10.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "17.0.20",
+    "@types/react-dom": "17.0.9",
+    "typescript": "4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
