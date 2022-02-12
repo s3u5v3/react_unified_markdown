@@ -1,9 +1,5 @@
 import "./styles.css";
-import { unified } from "unified";
-import parser from "remark-parse";
 import remarkGfm from "remark-gfm";
-import mdast2hast from "remark-rehype";
-import compiler from "rehype-react";
 import remarkGemoji from "remark-gemoji";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
@@ -28,17 +24,6 @@ const App: React.FC = () => {
   // console.log(trgMd);
   // console.log(content);
   // console.log(data);
-
-  // Use unified to parse and create React element
-  const tree = unified()
-    .use(parser)
-    .use(mdast2hast)
-    .use(print)
-    .use(remarkGfm)
-    .use(remarkGemoji)
-    .use(compiler, { createElement: React.createElement });
-  // console.log(md);
-  // console.log(md && tree.processSync(content).result);
 
   const anchor = ({ node, ...props }) => {
     // console.log(props.children);
