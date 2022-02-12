@@ -37,7 +37,6 @@ const App: React.FC = () => {
     .use(remarkGfm)
     .use(remarkGemoji)
     .use(compiler, { createElement: React.createElement });
-  // console.log(md);
   // console.log(md && tree.processSync(content).result);
 
   const anchor = ({ node, ...props }) => {
